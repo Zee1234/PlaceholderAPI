@@ -1,0 +1,53 @@
+###################################################################################################
+#                                                                                                 #
+#                                                                                                 #
+#                                                                                                 #
+#        Example Config, do not change!                                                           #
+#        #############################                                                            #
+#        # EnableReplacements: False #                                                            #
+#        # Replacements:             #                                                            #
+#        # -Placeholder1:            #                                                            #
+#        # --Plugin1: NewText1       #                                                            #
+#        # --Plugin2: NewText2       #                                                            #
+#        # -Placeholder2:            #                                                            #
+#        # --Plugin2: NewText3       #                                                            #
+#        #############################                                                            #
+#                                                                                                 #
+#        EnableReplacements should only be true if you have conflicts. False otherwise.           #
+#                                                                                                 #       
+#                                                                                                 #        
+#        If you have conflicts, you do not have to rename them all, but you can if you want.      #
+#        Let's play pretend. Say that you have a conflicting "balance" placeholder.               #
+#        Coiny and Money both want to register the "balance" placeholder.                         #
+#        We could do this:                                                                        #
+#        #############################                                                            #
+#        # -balance:                 #                                                            #
+#        # --Coiny: CoinyBalance     #                                                            #
+#        #############################                                                            #
+#        But that just feels sort of awkward. There's nothing actually wrong with this,           #
+#        it just doens't feel quite right. What about this?                                       #
+#        #############################                                                            #
+#        # -balance:                 #                                                            #
+#        # --Coiny: CoinyBalance     #                                                            #
+#        # --Money: MoneyBalance     #                                                            #
+#        #############################                                                            #
+#        To me, this feels better. In fact, I may go through and replace all the                  #
+#        coiny/money placeholders with this style, even if they aren't conflicting!               #
+#        Of course, you are welcome to disagree and prefer the first version.                     #
+#        There's nothing wrong with that, and in other circumstances, the second method           #
+#        could feel wrong for me, while the first feels right!                                    #
+#                                                                                                 # 
+#        Easier than it seemed at first, isn't it?                                                #
+#                                                                                                 #
+#                                                                                                 #
+#                                                                                                 #
+###################################################################################################
+
+EnableReplacements: False
+Replacements:
+-Placeholder1:
+--Plugin1: NewText1
+--Plugin2: NewText2
+-Placeholder2:
+--Plugin2: NewText3
+--Plugin2: NewText3
