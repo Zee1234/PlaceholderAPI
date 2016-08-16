@@ -25,7 +25,7 @@
 #        # --Coiny: CoinyBalance     #                                                            #
 #        #############################                                                            #
 #        But that just feels sort of awkward. There's nothing actually wrong with this,           #
-#        it just doens't feel quite right. What about this?                                       #
+#        it just doens't feel quite right to me. What about this?                                       #
 #        #############################                                                            #
 #        # -balance:                 #                                                            #
 #        # --Coiny: CoinyBalance     #                                                            #
@@ -35,7 +35,8 @@
 #        coiny/money placeholders with this style, even if they aren't conflicting!               #
 #        Of course, you are welcome to disagree and prefer the first version.                     #
 #        There's nothing wrong with that, and in other circumstances, the second method           #
-#        could feel wrong for me, while the first feels right!                                    #
+#        could feel wrong for me, while the first feels right! If three plugins use the same      #
+#        placeholder, you need at least two of renamed in the config, or all three of them.       #
 #                                                                                                 # 
 #        Easier than it seemed at first, isn't it?                                                #
 #                                                                                                 #
