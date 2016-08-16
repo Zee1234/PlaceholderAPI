@@ -7,10 +7,10 @@
 #        # EnableReplacements: True  #                                                            #
 #        # Replacements:             #                                                            #
 #        # -Placeholder1:            #                                                            #
-#        # --Plugin1: NewText1       #                                                            #
-#        # --Plugin2: NewText2       #                                                            #
+#        # --Plugin1: "NewText1"     #                                                            #
+#        # --Plugin2: "NewText2"     #                                                            #
 #        # -Placeholder2:            #                                                            #
-#        # --Plugin2: NewText3       #                                                            #
+#        # --Plugin2: "NewText3"     #                                                            #
 #        #############################                                                            #
 #                                                                                                 #
 #        EnableReplacements should only be true if you have conflicts. False otherwise.           #
@@ -22,14 +22,14 @@
 #        We could do this:                                                                        #
 #        #############################                                                            #
 #        # -balance:                 #                                                            #
-#        # --Coiny: CoinyBalance     #                                                            #
+#        # --Coiny: "CoinyBalance"   #                                                            #
 #        #############################                                                            #
 #        But that just feels sort of awkward. There's nothing actually wrong with this,           #
-#        it just doens't feel quite right to me. What about this?                                       #
+#        it just doens't feel quite right to me. What about this?                                 #
 #        #############################                                                            #
 #        # -balance:                 #                                                            #
-#        # --Coiny: CoinyBalance     #                                                            #
-#        # --Money: MoneyBalance     #                                                            #
+#        # --Coiny: "CoinyBalance"   #                                                            #
+#        # --Money: "MoneyBalance"   #                                                            #
 #        #############################                                                            #
 #        To me, this feels better. In fact, I may go through and replace all the                  #
 #        coiny/money placeholders with this style, even if they aren't conflicting!               #
@@ -47,8 +47,8 @@
 EnableReplacements: False
 Replacements:
 -Placeholder1:
---Plugin1: NewText1
---Plugin2: NewText2
+--Plugin1: "NewText1"
+--Plugin2: "NewText2"
 -Placeholder2:
---Plugin2: NewText3
+--Plugin2: "NewText3"
 --Plugin2: NewText3
