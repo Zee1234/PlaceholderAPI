@@ -4,7 +4,7 @@
 #                                                                                                 #
 #        Example Config, do not change!                                                           #
 #        #############################                                                            #
-#        # EnableReplacements: False #                                                            #
+#        # EnableReplacements: True  #                                                            #
 #        # Replacements:             #                                                            #
 #        # -Placeholder1:            #                                                            #
 #        # --Plugin1: NewText1       #                                                            #
