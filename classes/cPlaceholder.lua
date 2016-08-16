@@ -10,5 +10,17 @@ function cPlaceholder:new(a_plugin,a_text,a_help,a_callback,a_req_cPlayer,a_equa
   local obj = {}
   setmetatable(obj,cPlaceholder)
   
+  
+  obj.plugin = a_plugin
+  obj.help = a_help
+  obj.callback = a_callback
+  obj.player = a_req_cPlayer
+  obj.split = a_equals
+  obj.text=a_text
+  
+  return obj
 end
 
+function cPlaceholder:replace(a_args)
+  return cPluginManager:CallPlugin(self.plugin,self.callback,a_args)
+end
