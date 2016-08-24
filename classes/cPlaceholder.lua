@@ -21,6 +21,6 @@ function cPlaceholder:new(a_plugin,a_text,a_help,a_callback,a_req_cPlayer,a_equa
   return obj
 end
 
-function cPlaceholder:replace(a_args)
-  return cPluginManager:CallPlugin(self.plugin,self.callback,a_args)
+function cPlaceholder:replace(a_args,a_player)
+  return cPluginManager:CallPlugin(self.plugin,self.callback,self.text,a_args,a_player)
 end
