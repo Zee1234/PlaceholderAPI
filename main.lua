@@ -10,7 +10,7 @@ function Initialize(a_Plugin)
     LDHSetup()
   else
     cPluginManager:AddHook(cPluginManager.HOOK_PLUGINS_LOADED, LDHSetup)
-    cRoot:Get():GetDefaultWorld():ScheduleTask(1,LDHSetup)
+    cRoot:Get():GetDefaultWorld():ScheduleTask(2,LDHSetup)
   end
   
   g_Plugin = a_Plugin
@@ -31,4 +31,8 @@ function LDHSetup()
     cPluginManager:CallPlugin("LibDependHandler","RegisterLibrary","PlaceholderAPI")
     g_LDH = true
   end
+end
+
+function LDHVerify()
+  return true
 end
